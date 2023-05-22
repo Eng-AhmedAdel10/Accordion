@@ -1,0 +1,90 @@
+/* ******************public style******************** */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #4b145b;
+  color: #102a42;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* ******************main******************** */
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ******************container******************** */
+.container {
+  width: 90vw;
+  max-width: 920px;
+  margin: 5rem auto;
+  background-color: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 0.25rem;
+}
+/* ******************container******************** */
+.title {
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+/* ***************article***************** */
+.article {
+  padding: 1rem 1.5rem;
+  border-radius: 0.25rem;
+  border: 2px solid #eae6eb;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+  margin-bottom: 1rem;
+}
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.icon-btn {
+  padding: 0.5rem;
+  border-radius: 50%;
+  line-height: 0;
+  background-color: #eae6eb;
+  font-size: 0.75rem;
+  color: #b4345c;
+  cursor: pointer;
+  border: 0;
+}
+.answer {
+  margin-top: 0.5rem;
+  color: #324d67;
+  line-height: 1.5;
+}
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+  }
+  .title {
+    margin-right: 3rem;
+    margin-bottom: 0;
+    flex: 1;
+  }
+  .list {
+    flex: 3;
+  }
+}
